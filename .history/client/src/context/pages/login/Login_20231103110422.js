@@ -20,9 +20,7 @@ const Login = () => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
   //Password visiblity
-  const handlePasswordToggle = () => {
-    setPasswordVisible(!passwordVisible);
-  };
+  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -74,6 +72,7 @@ const Login = () => {
               </div>
               <form onSubmit={handleSubmit}>
                 <br />
+                {/* <label>Email: </label> <br/> */}
                 <input
                   placeholder="Your Email"
                   type="text"
@@ -81,31 +80,13 @@ const Login = () => {
                   onChange={handleChange}
                 />
                 <br /> <br />
-                {/* <input
+                {/* <label>Password: </label> */}
+                <input
                   placeholder="Your Password"
                   type="password"
                   name="password"
                   onChange={handleChange}
-                /> */}
-                <div className="password-input">
-                  <input
-                    placeholder="Your Password"
-                    type={passwordVisible ? "text" : "password"}
-                    name="password"
-                    onChange={handleChange}
-                  />
-                  {passwordVisible ? (
-                    <FaEyeSlash
-                      className="password-icon"
-                      onClick={handlePasswordToggle}
-                    />
-                  ) : (
-                    <FaEye
-                      className="password-icon"
-                      onClick={handlePasswordToggle}
-                    />
-                  )}
-                </div>
+                />
                 <br /> <br />
                 <button>Submit</button>
               </form>

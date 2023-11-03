@@ -43,7 +43,7 @@
 }
 
 .password-icon {
-  position: absolute;
+  /* position: absolute; */
   top: 50%;
   right: 30px;
   transform: translate(0, -50%);

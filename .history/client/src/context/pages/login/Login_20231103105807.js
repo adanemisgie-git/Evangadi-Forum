@@ -4,14 +4,12 @@ import { Link, useNavigate } from "react-router-dom";
 import { UserContext } from "../../UserContext";
 import axios from "axios";
 import LandingPage from "../LandingPage/LandingPage";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
 import './Login.css'
 
 const Login = () => {
   const [userData, setUserData] = useContext(UserContext);
   const navigate = useNavigate();
   const [form, setForm] = useState({});
-  const [passwordVisible, setPasswordVisible] = useState(false);
 
   // const [type, setType] = useState("password");
   // const [visibility, setVisibilitiy] = useState(false);
@@ -20,9 +18,7 @@ const Login = () => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
   //Password visiblity
-  const handlePasswordToggle = () => {
-    setPasswordVisible(!passwordVisible);
-  };
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -74,6 +70,7 @@ const Login = () => {
               </div>
               <form onSubmit={handleSubmit}>
                 <br />
+                {/* <label>Email: </label> <br/> */}
                 <input
                   placeholder="Your Email"
                   type="text"
@@ -81,31 +78,13 @@ const Login = () => {
                   onChange={handleChange}
                 />
                 <br /> <br />
-                {/* <input
+                {/* <label>Password: </label> */}
+                <input
                   placeholder="Your Password"
                   type="password"
                   name="password"
                   onChange={handleChange}
-                /> */}
-                <div className="password-input">
-                  <input
-                    placeholder="Your Password"
-                    type={passwordVisible ? "text" : "password"}
-                    name="password"
-                    onChange={handleChange}
-                  />
-                  {passwordVisible ? (
-                    <FaEyeSlash
-                      className="password-icon"
-                      onClick={handlePasswordToggle}
-                    />
-                  ) : (
-                    <FaEye
-                      className="password-icon"
-                      onClick={handlePasswordToggle}
-                    />
-                  )}
-                </div>
+                />
                 <br /> <br />
                 <button>Submit</button>
               </form>

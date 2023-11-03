@@ -47,7 +47,7 @@
   top: 50%;
   right: 30px;
   transform: translate(0, -50%);
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .password-icon:hover {
