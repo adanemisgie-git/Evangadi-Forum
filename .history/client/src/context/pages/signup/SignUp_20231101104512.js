@@ -2,23 +2,17 @@ import React, { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { UserContext } from "../../UserContext";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
 import "./SignUP.css";
 import LandingPage from "../LandingPage/LandingPage";
 
 const SignUp = () => {
   const [form, setForm] = useState({});
   const navigate = useNavigate();
-  const [passwordVisible, setPasswordVisible] = useState(false);
 
   //importing global state from context
   const [userData, setUserData] = useContext(UserContext);
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
-  };
-
-  const handlePasswordToggle = () => {
-    setPasswordVisible(!passwordVisible);
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -100,32 +94,12 @@ const SignUp = () => {
                 />
                 <br />
                 <br />
-                {/* <input
+                <input
                   placeholder="Password"
                   type="password"
                   name="password"
                   onChange={handleChange}
-                /> */}
-
-                <div className="password-input">
-                  <input
-                    placeholder="Your Password"
-                    type={passwordVisible ? "text" : "password"}
-                    name="password"
-                    onChange={handleChange}
-                  />
-                  {passwordVisible ? (
-                    <FaEyeSlash
-                      className="password-icon"
-                      onClick={handlePasswordToggle}
-                    />
-                  ) : (
-                    <FaEye
-                      className="password-icon"
-                      onClick={handlePasswordToggle}
-                    />
-                  )}
-                </div>
+                />
                 <br />
                 <br />
                 <button type="submit">Agree and Join</button>

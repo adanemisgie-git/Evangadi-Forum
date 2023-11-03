@@ -62,22 +62,3 @@
 }
 
 
-.password-input {
-  position: relative;
-}
-
-.password-icon {
-  position: absolute;
-  top: 50%;
-  right: 30px;
-  transform: translate(0, -50%);
-  cursor: pointer;
-}
-
-.password-icon:hover {
-  color: #888;
-}
-
-.password-icon:active {
-  color: #555;
-}

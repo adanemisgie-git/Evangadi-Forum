@@ -106,13 +106,10 @@ const Login = () => {
                     />
                   )}
                 </div>
-                <br />
+                <br /> <br />
                 <button>Submit</button>
-                <br />
-                <Link className="CrtAct" to="/signup">
-                  Create an account?
-                </Link>
               </form>
+              
             </div>
           </>
         }

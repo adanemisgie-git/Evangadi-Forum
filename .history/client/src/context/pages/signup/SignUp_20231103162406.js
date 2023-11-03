@@ -100,32 +100,12 @@ const SignUp = () => {
                 />
                 <br />
                 <br />
-                {/* <input
+                <input
                   placeholder="Password"
                   type="password"
                   name="password"
                   onChange={handleChange}
-                /> */}
-
-                <div className="password-input">
-                  <input
-                    placeholder="Your Password"
-                    type={passwordVisible ? "text" : "password"}
-                    name="password"
-                    onChange={handleChange}
-                  />
-                  {passwordVisible ? (
-                    <FaEyeSlash
-                      className="password-icon"
-                      onClick={handlePasswordToggle}
-                    />
-                  ) : (
-                    <FaEye
-                      className="password-icon"
-                      onClick={handlePasswordToggle}
-                    />
-                  )}
-                </div>
+                />
                 <br />
                 <br />
                 <button type="submit">Agree and Join</button>

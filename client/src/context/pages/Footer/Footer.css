@@ -38,7 +38,9 @@
   vertical-align: middle;
 }
 .footer__icon {
-  margin: 8px 0px;
+  position:absolute;
+  padding-left: 8px;
+  padding-top: 8px;
 }
 .footer img {
   width: 180px;
