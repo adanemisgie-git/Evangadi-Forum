@@ -110,7 +110,7 @@ function Answer(props) {
 
           <div className="answer__form">
             <form onSubmit={handleSubmit}>
-              <textarea className="p-3"
+              <textarea className=""
                 onChange={handleChange}
                 name="answerField"
                 placeholder="Your Answer ..."

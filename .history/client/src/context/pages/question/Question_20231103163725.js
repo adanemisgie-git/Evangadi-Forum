@@ -79,10 +79,11 @@ function Question() {
                 <input
                   name="title"
                   type="text"
-                  className="askcover__qtitle p-3 mb-1"
+                  className="askcover__qtitle p-3"
                   placeholder="Title"
                   onChange={handleChange}
                 />
+                <br />
                 <br />
                 <textarea className="p-3"
                   name="description"
