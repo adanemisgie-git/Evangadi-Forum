@@ -47,7 +47,7 @@ const Home = ({ logout }) => {
           }}
           className="home_topBtn"
         >
-          <p className="bg-blue-600 w-36 h-8 rounded-lg">Ask Question</p>
+          <p className="bg-blue-700 w-36">Ask Question</p>
         </button>
 
         <h4>Welcome: {userData.user?.display_name}</h4>

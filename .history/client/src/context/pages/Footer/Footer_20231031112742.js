@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 import { FiFacebook } from "react-icons/fi";
 import { BsInstagram } from "react-icons/bs";
@@ -31,7 +32,7 @@ function Footer() {
         </ul>
       </div>
       <div className="footer__mid">
-        <h3>Useful Links</h3>
+        <h3>Useful Link</h3>
         <ul className="footer__midList">
           <li>How it Works</li>
           <li>Terms of Service</li>

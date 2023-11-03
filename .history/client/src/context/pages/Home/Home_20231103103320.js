@@ -45,9 +45,9 @@ const Home = ({ logout }) => {
           onClick={() => {
             navigate("/question");
           }}
-          className="home_topBtn"
+          className="bg-blue-500"
         >
-          <p className="bg-blue-600 w-36 h-8 rounded-lg">Ask Question</p>
+          Ask Question
         </button>
 
         <h4>Welcome: {userData.user?.display_name}</h4>
