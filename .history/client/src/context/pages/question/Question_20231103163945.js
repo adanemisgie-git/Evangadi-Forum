@@ -61,11 +61,11 @@ function Question() {
       <div className="askcover">
         <div className="askcover__steps">
           <h3 className="font-semibold m-4">Steps to Write a good question</h3>
-          <ul className="m-4">
+          <ul>
             <li>1.Summarize in a one-line title</li>
             <li>2.Describe in more detail</li>
             <li>3.Describe what you expect to happen</li>
-            <li>4.Review your question and post</li>
+            <li>Review your question and post</li>
           </ul>
         </div>
         <div className="askcover_question">
