@@ -86,7 +86,7 @@ function Answer(props) {
         </div>
 
         <div className="answer__title">
-          {prevAnswers?.length != 0 && <h4>Answer From the Community</h4>}
+          {prevAnswers?.length != 0 && <h4>Answer From the </h4>}
         </div>
         <div className="answer__list">
           <div>
